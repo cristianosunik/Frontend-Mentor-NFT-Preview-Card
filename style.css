@@ -1,0 +1,146 @@
+body, html,main{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+    font: normal 400 18px 'Outfit', sans-serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: hsl(216, 50%, 16%);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 30px 0 17px hsl(217, 56%, 8%, 0.25), 0 25px 0 50px hsl(217, 56%, 8%, 0.15);
+}
+
+.illustration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.illustration img{
+    margin: 1rem 0 1rem 0;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.view-overlay{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: .5s ease;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+}
+
+.view-icon{
+    display: flex;
+    flex-grow: 0;
+    position: absolute;
+    max-width: 48px;
+    height: 48px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.illustration:hover .view-overlay{
+    opacity: .5;
+}
+
+.illustration:hover .view-icon{
+    opacity: 1;
+}
+
+.description{
+    padding: 0 1rem 0 1rem;
+    color: hsl(215, 51%, 70%);
+}
+
+h1{
+    font-size: 19px;
+    color: hsl(0, 0%, 100%);
+}
+
+.infos{
+    display: flex;
+    width: 90%;
+}
+
+.price,.time-left{
+    display: flex;
+    flex-grow: 1;
+}
+
+.price{
+    flex-grow: 2;
+}
+
+h2{
+    color: hsl(178, 100%, 50%);
+    font-size: 16px;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.time-left{
+    padding-left: 7rem;
+}
+
+.time-left p{
+    color: hsl(215, 51%, 70%);
+    margin: 0 1px 0 0;
+    padding-left: 5px;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    border-top: 1px solid hsl(215, 51%, 70%) ;
+    margin: 1rem 0 1rem 0;
+}
+
+.author img{
+    width: 40px;
+    height: 40px;
+    border-style: 10px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 30px;
+    margin-top: 1rem;
+}
+
+.author p{
+    color: hsl(215, 51%, 70%);
+    padding-left: 1rem;
+}
+
+.author a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover,h1:hover{
+    color: hsl(178, 100%, 50%);
+}
